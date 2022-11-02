@@ -6,8 +6,10 @@ jobs:
     steps:
       - name: dame cositas
         run: echo "${{ github }}"
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: install
-        run: npm install ../.
+        run: npm install
       - name: lintea
         run: npm run lint
       - name: test
