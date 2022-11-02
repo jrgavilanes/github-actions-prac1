@@ -7,7 +7,7 @@ jobs:
       - name: dame cositas
         run: echo "${{ github }}"
       - name: install
-        run: npm install ..
+        run: ../npm install 
       - name: lintea
         run: npm run lint
       - name: test
