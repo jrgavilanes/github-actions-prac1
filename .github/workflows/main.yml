@@ -1,0 +1,11 @@
+name: primer workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hola
+        run: echo "hola nano"
+      - name: Print au
+        run: echo "au nano"
+      
