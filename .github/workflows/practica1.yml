@@ -1,0 +1,16 @@
+name: primer workflow
+on: [workflow_dispatch, push]
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dame cositas
+        run: echo "${{ github }}"
+      - name: install
+        run: npm install
+      - name: lintea
+        run: npm run lint
+      - name: test
+        run: npm run test
+      - name: fabrica
+        run: npm run build
